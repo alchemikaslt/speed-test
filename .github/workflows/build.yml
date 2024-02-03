@@ -28,7 +28,7 @@ jobs:
         with:
           push: true
           tags: alchemiks/speed-test:latest
-      - name: Invoke deployment hook
-        uses: distributhor/workflow-webhook@v3
-        with:
-          webhook_url: ${{ secrets.WEBHOOK_URL_SPEED_TEST }}
+     # - name: Invoke deployment hook
+     #   uses: distributhor/workflow-webhook@v3
+     #   with:
+     #     webhook_url: ${{ secrets.WEBHOOK_URL_SPEED_TEST }}
