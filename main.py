@@ -2,7 +2,7 @@ import speedtest
 import influxdb_client, os, time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
-
+#
 token = os.environ.get("INFLUXDB_TOKEN")
 org = os.environ.get("ORG")
 url = os.environ.get("INFLUXDB_URL")
