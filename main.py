@@ -3,6 +3,10 @@ import influxdb_client, os, time
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 #
+t = time.localtime()
+current_time = time.strftime("%H:%M:%S", t)
+print (current_time + " Starting test")
+
 token = os.environ.get("INFLUXDB_TOKEN")
 org = os.environ.get("ORG")
 url = os.environ.get("INFLUXDB_URL")
